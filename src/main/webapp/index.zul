@@ -1,0 +1,18 @@
+<zk>
+    <zscript><![CDATA[
+        DefaultTreeModel model = new DefaultTreeModel(new DefaultTreeNode("ROOT",
+            Arrays.asList(new DefaultTreeNode[] {
+                new DefaultTreeNode("Taipei", Arrays.asList(new DefaultTreeNode[] {
+                    new DefaultTreeNode("Songshan Dist.", new ArrayList()),
+                    new DefaultTreeNode("Da'an Dist.", new ArrayList()),
+                    new DefaultTreeNode("Zhongshan Dist.", Arrays.asList(new DefaultTreeNode[] {
+                        new DefaultTreeNode("Potix Corp.", new ArrayList())
+                    }))
+                })),
+                new DefaultTreeNode("Taichung", new ArrayList()),
+                new DefaultTreeNode("Kaohsiung", new ArrayList())
+            })));
+    ]]></zscript>
+    <separator />
+    <cascader model="${model}" width="300px" />
+</zk>
